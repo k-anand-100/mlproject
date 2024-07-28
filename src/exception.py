@@ -2,7 +2,7 @@ import sys
 import logging
 
 # Ensure the logger is set up correctly by importing the logger configuration
-import logger  # Import the logger configuration
+from src.logger import logging  # Import the logger configuration
 
 def error_message_detail(error, error_detail: sys):
     _, _, exc_tb = error_detail.exc_info()
